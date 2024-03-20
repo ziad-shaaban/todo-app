@@ -1,0 +1,21 @@
+:root {
+  /* light theme */
+  --img-bg: url("./images/bg-desktop-light.jpg");
+  --body-bg: hsl(0, 0%, 98%);
+  --text-color: hsl(235, 19%, 35%);
+  --card-bg: hsl(0, 0%, 100%);
+  /* --placeholder-color: hsl(236, 9%, 61%); */
+
+  --very-light-grayish-blue: hsl(236, 33%, 92%);
+  /* on-hover in dark theme*/
+  /* --light-grayish-blue: hsl(233, 11%, 84%); */
+  --placeholder-color: hsl(233, 11%, 84%);
+}
+
+header .dark-theme {
+  display: block;
+}
+header .light-theme {
+  display: none;
+}
+/*  */

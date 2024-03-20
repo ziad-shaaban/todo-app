@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+    <link id="theme-style" rel="stylesheet" type="text/css" href="" />
+  </head>
+  <body>
+    <!-- header with buttons to switch themes -->
+    <header class="">
+      <h1>TODO</h1>
+      <button class="dark-theme" id="dark-theme-btn">
+        <img src="./images/icon-moon.svg" alt="Change theme color" />
+      </button>
+      <button class="light-theme" id="light-theme-btn">
+        <img src="./images/icon-sun.svg" alt="Change theme color" />
+      </button>
+    </header>
+
+    <main>
+      <!-- input and button to add todo items -->
+      <div class="card add">
+        <div class="">
+          <button id="add-btn">
+            <i class="fas fa-plus" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="txt-container">
+          <input
+            type="text"
+            class=""
+            placeholder="Create a new todo..."
+            spellcheck="false"
+            autocomplete="off"
+          />
+        </div>
+      </div>
+
+      <!-- list of all todo items -->
+      <ul class="todos">
+        <li class="card todo-item" draggable="true" data-index="0">
+          <div class="todo">
+            <input type="checkbox" id="checkbox-2048" />
+            <label for="checkbox-2048"></label>
+            <p>one</p>
+          </div>
+          <div class="icons">
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </div>
+        </li>
+
+        <!-- 
+            more similar items here
+        -->
+      </ul>
+      <div class="card stats">
+        <p class=""><span id="items-left">0</span> items left</p>
+
+        <!-- filter buttons  -->
+        <div class="filter">
+          <button id="all" class="active">All</button>
+          <button id="active">Active</button>
+          <button id="completed">Completed</button>
+        </div>
+        <div class="corner">
+          <button id="clear">Clear Completed</button>
+        </div>
+      </div>
+
+      <!-- filter buttons on mobile -->
+      <div class="card m-filter">
+        <button id="m-all" class="active">All</button>
+        <button id="m-active">Active</button>
+        <button id="m-completed">Completed</button>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer>
+      <p>Drag and drop to reorder list</p>
+    </footer>
+  </body>
+</html>

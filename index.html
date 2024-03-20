@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Todo app</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="./styles.css" />
+    <link id="theme-style" rel="stylesheet" type="text/css" href="" />
+  </head>
+  <body>
+    <header class="">
+      <h1>TODO</h1>
+      <button class="dark-theme" id="dark-theme-btn">
+        <img src="./images/icon-moon.svg" alt="Change theme color" />
+      </button>
+      <button class="light-theme" id="light-theme-btn">
+        <img src="./images/icon-sun.svg" alt="Change theme color" />
+      </button>
+    </header>
+
+    <main>
+      <div class="card add">
+        <div class="">
+          <button id="add-btn">
+            <i class="fas fa-plus" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="txt-container">
+          <input
+            type="text"
+            class=""
+            placeholder="Create a new todo..."
+            spellcheck="false"
+            autocomplete="off"
+          />
+        </div>
+      </div>
+      <ul class="todos"></ul>
+      <div class="card stats">
+        <p class=""><span id="items-left">0</span> items left</p>
+        <div class="filter">
+          <button id="all" class="active">All</button>
+          <button id="active">Active</button>
+          <button id="completed">Completed</button>
+        </div>
+        <div class="corner">
+          <button id="clear">Clear Completed</button>
+        </div>
+      </div>
+      <div class="card m-filter">
+        <button id="m-all" class="active">All</button>
+        <button id="m-active">Active</button>
+        <button id="m-completed">Completed</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>Drag and drop to reorder list</p>
+    </footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >.
+    </div>
+    <script src="toggleTheme.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
